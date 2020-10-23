@@ -5,18 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <style>
-*{
-    margin:0;
-    padding:0;
-    list-style: none;
-}
 body{
-    width: 100%;
-    height: 718px;
     display: flex;
     justify-content: center;
-    /* background-color: #ffc; */
-    margin-top: 36px;
+    background: #ffc;
 }
 .text{
     text-align: center;
@@ -25,57 +17,54 @@ body{
     font-weight: bolder;
     text-decoration: underline;
     color: #00f;
-    margin: 20px;
 }
 .mainpic{
-    position: relative;
-}
-.img0{
     width: 410px;
-    height: 310px;
+    height: 330px;
 }
-.pic #img1,
-.pic #img2,
-.pic #img3,
-.pic #img4,
-.pic #img5{
+#mainpic{
     width: 400px;
     height: 300px;
-    border: 5px solid#00f; 
     position: absolute;
-    top: 0;
-    left: 0;
-}
-.pic #img1{
-    z-index: 1;
+    bottom: 80px;
+    border: 5px solid#00f;
 }
 .select{
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
-}      
-#img1:target,
-#img2:target,
-#img3:target,
-#img4:target,
-#img5:target{
-   z-index: 2;
+    position: relative;
 }
-a img{
+.pic1,.pic2,.pic3,.pic4,.pic5{
     width: 60px;
     height: 45px;
     border: 5px solid#00f;
 }
-a img:hover{
+.pic1:hover,
+.pic2:hover,
+.pic3:hover,
+.pic4:hover,
+.pic5:hover{
     border: 5px solid#0ff;
+    cursor: pointer;
+}
+#select1:checked~#mainpic{
+    background: url(../images/0551.jpg);
+}
+#select2:checked~#mainpic{
+    background: url(../images/0552.jpg);
+}
+#select3:checked~#mainpic{
+    background: url(../images/0553.jpg);
+}
+#select4:checked~#mainpic{
+    background: url(../images/0554.jpg);
+}
+#select5:checked~#mainpic{
+    background: url(../images/0555.jpg);
 }
 input{
     display: none;
 }
-label{
-    cursor:  pointer;
-}
-
 </style>
 </head>
 <body>
@@ -83,45 +72,26 @@ label{
     <div class="text">
         <p>蘭嶼賞魚去</p>
     </div>
-<div class="mainpic">
-    <div class="img0"></div>
-    <div class="pic">
-    <div id="img1">
-        <img class="mainpic1" name="mainpic1" src="../images/0551.jpg" alt="主圖1">
-    </div>
-    <div id="img2">
-        <img class="mainpic2" name="mainpic2" src="../images/0552.jpg" alt="主圖2">
-    </div>
-    <div id="img3">
-        <img class="mainpic3" name="mainpic3" src="../images/0553.jpg" alt="主圖3">
-    </div>
-    <div id="img4">
-        <img class="mainpic4" name="mainpic4" src="../images/0554.jpg" alt="主圖4">
-    </div>
-    <div id="img5">
-        <img class="mainpic5" name="mainpic5" src="../images/0555.jpg" alt="主圖5">
-    </div>
-</div>
-</div>
+<div class="mainpic"></div>
 <div class="select">
-    <a href="#img1" target="imain">
-    <img src="../images/0551.jpg"></a>
+        
+    <input type="radio" checked="" name="select0" id="select1"> 
+    <label for="select1"><img class="pic1" src="../images/0551.jpg"></label>
 
-    <a href="#img2" target="imain">
-    <img src="../images/0552.jpg"></a>
-    
-    <a href="#img3" target="imain">
-    <img src="../images/0553.jpg"></a>
+    <input type="radio" name="select0" id="select2">   
+    <label for="select2"><img class="pic2" src="../images/0552.jpg"></label>
 
-    <a href="#img4" target="imain">
-    <img src="../images/0554.jpg"></a>
+    <input type="radio" name="select0" id="select3">
+    <label for="select3"><img class="pic3" src="../images/0553.jpg"></label>
 
-    <a href="#img5" target="imain">
-    <img src="../images/0555.jpg"></a>
+    <input type="radio" name="select0" id="select4"> 
+    <label for="select4"><img class="pic4" src="../images/0554.jpg"></label>
+
+    <input type="radio" name="select0" id="select5">
+    <label for="select5"><img class="pic5" src="../images/0555.jpg"></label>
+
+    <div id="mainpic"></div>
 </div>
-</div>
-
-    
-    
+</div> 
 </body>
 </html>
