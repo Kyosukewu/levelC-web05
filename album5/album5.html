@@ -18,21 +18,15 @@ body{
     text-decoration: underline;
     color: #00f;
 }
-.mainpic{
-    width: 410px;
-    height: 330px;
-}
-#mainpic{
-    width: 400px;
-    height: 300px;
-    position: absolute;
-    bottom: 80px;
-    border: 5px solid#00f;
-}
 .select{
     display: flex;
     justify-content: space-between;
-    position: relative;
+}
+iframe{
+    width: 400px;
+    height: 300px;
+    border: 5px solid#00f;
+    margin-bottom: 15px;
 }
 .pic1,.pic2,.pic3,.pic4,.pic5{
     width: 60px;
@@ -47,24 +41,6 @@ body{
     border: 5px solid#0ff;
     cursor: pointer;
 }
-#select1:checked~#mainpic{
-    background: url(../images/0551.jpg);
-}
-#select2:checked~#mainpic{
-    background: url(../images/0552.jpg);
-}
-#select3:checked~#mainpic{
-    background: url(../images/0553.jpg);
-}
-#select4:checked~#mainpic{
-    background: url(../images/0554.jpg);
-}
-#select5:checked~#mainpic{
-    background: url(../images/0555.jpg);
-}
-input{
-    display: none;
-}
 </style>
 </head>
 <body>
@@ -72,25 +48,24 @@ input{
     <div class="text">
         <p>蘭嶼賞魚去</p>
     </div>
-<div class="mainpic"></div>
+<div class="frame">
+    <iframe src="../images/0551.jpg" name="mainpic" frameborder="0"></iframe>
+</div>
 <div class="select">
-        
-    <input type="radio" checked="" name="select0" id="select1"> 
-    <label for="select1"><img class="pic1" src="../images/0551.jpg"></label>
+    <a href="../images/0551.jpg" target="mainpic">
+    <img class="pic1" src="../images/0551.jpg"></a>
 
-    <input type="radio" name="select0" id="select2">   
-    <label for="select2"><img class="pic2" src="../images/0552.jpg"></label>
+    <a href="../images/0552.jpg" target="mainpic">
+    <img class="pic2" src="../images/0552.jpg"></a>
 
-    <input type="radio" name="select0" id="select3">
-    <label for="select3"><img class="pic3" src="../images/0553.jpg"></label>
+    <a href="../images/0553.jpg" target="mainpic">
+    <img class="pic3" src="../images/0553.jpg"></a>
+    
+    <a href="../images/0554.jpg" target="mainpic">
+    <img class="pic4" src="../images/0554.jpg"></a>
 
-    <input type="radio" name="select0" id="select4"> 
-    <label for="select4"><img class="pic4" src="../images/0554.jpg"></label>
-
-    <input type="radio" name="select0" id="select5">
-    <label for="select5"><img class="pic5" src="../images/0555.jpg"></label>
-
-    <div id="mainpic"></div>
+    <a href="../images/0553.jpg" target="mainpic">
+    <img class="pic5" src="../images/0553.jpg"></a>
 </div>
 </div> 
 </body>

@@ -3,112 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-<style>
-    *{
-        margin:0;
-        padding:0;
-        list-style: none;
-    }
-    body{
-        background-color: #333333;
-    }
-    .body{
-        width: 1024px;
-        height: 768px;
-        margin: auto;
-        background-color: #ffc;
-        display: flex;
-    }
-    .nemu{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 10px;
-    } 
-    .footer p{
-        font-size: 12px;
-        font-weight: bolder;
-        color: #f00;
-        text-align: center;
-        margin: 15px 0;
-        font-family: "新細明體";
-    }
-    .select{
-        margin-top: 36px;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-    }
-    .pic1,.pic6{
-        position: absolute;
-        left: 0;
-    }
-    .back{
-        position: relative;
-    }  
-    .pic1:hover,
-    .pic6:hover{
-        opacity: 0;
-    }
-    marquee{
-        width: 874px;
-        height: 50px;
-        font-size: 24px;
-        font-family: "標楷體";
-        font-weight: bolder;
-        color: #f00;
-        line-height: 50px;
-        padding: 0;
-    }
-    iframe{
-        width: 802px;
-        height: 646px;
-        overflow: hidden;
-        margin: 36px;
-    }
-</style>
+    <title>書曼的旅遊相簿</title>
+    <style>
+        body{
+            background: #333;
+        }
+        .body{
+            display: flex;
+            width: 1024px;
+            height: 768px;
+            background: #ffc;
+            margin: auto;
+        }
+        .nemu{
+            flex: 0 0 150px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .footer p{
+            font-size: 12px;
+            font-weight: bolder;
+            color: #f00;
+            text-align: center;
+            font-family: "新細明體";
+        }
+        .select{
+            position: relative;
+        }
+        .pic1,.pic6{
+            position: absolute;
+            left: 15px;
+        }
+        .back{
+            position: relative;
+        }  
+        .pic1:hover,
+        .pic6:hover{
+            opacity: 0;
+        }
+        marquee{
+            height: 50px;
+            font-size: 24px;
+            font-family: "標楷體";
+            font-weight: bolder;
+            color: #f00;
+            line-height: 50px;
+            padding: 0;
+        }
+        iframe{
+            width: 802px;
+            height: 646px;
+            overflow: hidden;
+            margin: 36px;
+        }
+    </style>
 </head>
 <body>
     <div class="body">
-    <audio autoplay src="music/0501.mp3"></audio>
-<div class="nemu">
-    <img src="images/0508.gif" alt="書曼的旅遊相簿">
-    <img src="images/0507.jpg" alt="書曼">
-
-    <div class="select">
-        <div>
-        <img src="images/0501r.gif" alt="金門逍遙遊">
-        <a href="#"><img class="pic1" src="images/0501b.gif" alt="金門逍遙遊"></a></div>
-        <div>
-        <img src="images/0502r.gif" alt="卡蹓到馬祖">
-        <a href="#"><img class="pic1" src="images/0502b.gif" alt="卡蹓到馬祖"></a></div>
-        <div>
-        <img src="images/0503r.gif" alt="踏浪澎湖行">
-        <a href="#"><img class="pic1" src="images/0503b.gif" alt="踏浪澎湖行"></a></div>
-        <div >
-        <img src="images/0504r.gif" alt="綠島唱夜曲">
-        <a href="#"><img class="pic1" src="images/0504b.gif" alt="綠島唱夜曲"></a></div>
-        <div >
-        <img src="images/0505r.gif" alt="蘭嶼賞魚去">
-        <a href="album5/album5.html" target="imain"><img  class="pic1" src="images/0505b.gif" alt="蘭嶼賞魚去"></a></div>
+        <audio autoplay src="music/0501.mp3"></audio>
+    <div class="nemu">
+        <img src="images/0508.gif" alt="書曼的旅遊相簿">
+        <img src="images/0507.jpg" alt="書曼">
+    
+        <div class="select">
+            <div>
+            <img src="images/0501r.gif" alt="金門逍遙遊">
+            <a href="#"><img class="pic1" src="images/0501b.gif" alt="金門逍遙遊"></a></div>
+            <div>
+            <img src="images/0502r.gif" alt="卡蹓到馬祖">
+            <a href="#"><img class="pic1" src="images/0502b.gif" alt="卡蹓到馬祖"></a></div>
+            <div>
+            <img src="images/0503r.gif" alt="踏浪澎湖行">
+            <a href="#"><img class="pic1" src="images/0503b.gif" alt="踏浪澎湖行"></a></div>
+            <div >
+            <img src="images/0504r.gif" alt="綠島唱夜曲">
+            <a href="#"><img class="pic1" src="images/0504b.gif" alt="綠島唱夜曲"></a></div>
+            <div >
+            <img src="images/0505r.gif" alt="蘭嶼賞魚去">
+            <a href="album5/album5.html" target="imain"><img  class="pic1" src="images/0505b.gif" alt="蘭嶼賞魚去"></a></div>
+        </div>
+        <div class="footer">
+            <p>日期：2020/08/04<br>
+            維護：05 KYO</p>
+        </div>
+        <div class="back">
+            <img src="images/0506r.gif">
+            <a  href="index.html" target="_self"><img  class="pic6" src="images/0506b.gif"></a>
+        </div>
     </div>
-    <div class="footer">
-        <p>日期：2020/08/04<br>
-        維護：05 KYO</p>
+    
+    <div class="main">
+        <marquee>歡迎來到書曼的旅遊相簿，本網站有我的旅遊影像紀錄介紹耶！</marquee>
+        <iframe src="main.html" name="imain" frameborder="0" scrolling="no"></iframe>
     </div>
-    <div class="back">
-        <img src="images/0506r.gif">
-        <a  href="index.html" target="_self"><img  class="pic6" src="images/0506b.gif"></a>
     </div>
-</div>
-
-<div class="main">
-    <marquee>歡迎來到書曼的旅遊相簿，本網站有我的旅遊影像紀錄介紹耶！</marquee>
-    <iframe src="main.html" name="imain" frameborder="0" scrolling="no"></iframe>
-</div>
-</div>
 </body>
 </html>
